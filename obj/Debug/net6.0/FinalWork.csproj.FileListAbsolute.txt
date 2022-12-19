@@ -1,0 +1,15 @@
+G:\univ\ооп\labs\FinalWork\FinalWork\bin\Debug\net6.0\FinalWork.exe
+G:\univ\ооп\labs\FinalWork\FinalWork\bin\Debug\net6.0\FinalWork.deps.json
+G:\univ\ооп\labs\FinalWork\FinalWork\bin\Debug\net6.0\FinalWork.runtimeconfig.json
+G:\univ\ооп\labs\FinalWork\FinalWork\bin\Debug\net6.0\FinalWork.dll
+G:\univ\ооп\labs\FinalWork\FinalWork\bin\Debug\net6.0\FinalWork.pdb
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.csproj.AssemblyReference.cache
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.GeneratedMSBuildEditorConfig.editorconfig
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.AssemblyInfoInputs.cache
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.AssemblyInfo.cs
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.csproj.CoreCompileInputs.cache
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.dll
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\refint\FinalWork.dll
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.pdb
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\FinalWork.genruntimeconfig.cache
+G:\univ\ооп\labs\FinalWork\FinalWork\obj\Debug\net6.0\ref\FinalWork.dll
