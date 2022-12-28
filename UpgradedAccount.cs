@@ -14,12 +14,12 @@
             if (WinStreak >= 3)
             {
                 decimal bonus = Decimal.Divide(game.GetRating, 5);
-                var gamewon = new Data(playername, opponentname, game.GetRating + (int)Math.Round(bonus) + (WinStreak - 3), "WIN");
+                var gamewon = new Data(playername, opponentname, game.GetRating + (int)Math.Round(bonus) + (WinStreak - 3), "ПЕРЕМОГА");
                 allGames.Add(gamewon);
             }
             else
             {
-                var gamewon = new Data(playername, opponentname, game.GetRating, "WIN");
+                var gamewon = new Data(playername, opponentname, game.GetRating, "ПЕРЕМОГА");
                 allGames.Add(gamewon);
             }
         }
@@ -27,12 +27,12 @@
         {
             if (CurrentRating - game.GetRating < 1)
             {
-                var negativerating = new Data(playername, opponentname, -CurrentRating + 1, "LOSE");
+                var negativerating = new Data(playername, opponentname, -CurrentRating + 1, "ПОРАЗКА");
                 allGames.Add(negativerating);
             } else
             {
                 WinStreak = 0;
-                var lostgame = new Data(playername, opponentname, -game.GetRating, "LOSE");
+                var lostgame = new Data(playername, opponentname, -game.GetRating, "ПОРАЗКА");
                 allGames.Add(lostgame);
             }
         }

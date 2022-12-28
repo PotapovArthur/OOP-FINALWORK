@@ -11,13 +11,13 @@
         {
             if (CurrentRating - game.GetRating < 1)
             {
-                var negativerating = new Data(playername, opponentname, -CurrentRating + 1, "LOSE");
+                var negativerating = new Data(playername, opponentname, -CurrentRating + 1, "ПОРАЗКА");
                 allGames.Add(negativerating);
             }
             else
             {
                 decimal rating = Decimal.Divide(game.GetRating, 2);
-                var lostgame = new Data(playername, opponentname, (int)-Math.Ceiling(rating), "LOSE");
+                var lostgame = new Data(playername, opponentname, (int)-Math.Ceiling(rating), "ПОРАЗКА");
                 allGames.Add(lostgame);
             }
         }

@@ -32,24 +32,24 @@
         protected List<Data> allGames = new List<Data>();
         public virtual void WinGame(string playername, string opponentname, Game game)
         {
-            var gamewon = new Data(playername, opponentname, game.GetRating, "WIN");
+            var gamewon = new Data(playername, opponentname, game.GetRating, "ПЕРЕМОГА");
             allGames.Add(gamewon);
         }
         public virtual void LoseGame(string playername, string opponentname, Game game)
         {
             if (CurrentRating - game.GetRating < 1)
             {
-                var negativerating = new Data(playername, opponentname, -CurrentRating + 1, "LOSE");
+                var negativerating = new Data(playername, opponentname, -CurrentRating + 1, "ПОРАЗКА");
                 allGames.Add(negativerating);
             } else
             {
-                var lostgame = new Data(playername, opponentname, -game.GetRating, "LOSE");
+                var lostgame = new Data(playername, opponentname, -game.GetRating, "ПОРАЗКА");
                 allGames.Add(lostgame);
             }
         }
         public void DrawGame(string playername, string opponentname)
         {
-            var drawgame = new Data(playername, opponentname, 0, "DRAW");
+            var drawgame = new Data(playername, opponentname, 0, "НIЧИЯ");
             allGames.Add(drawgame);
         }
         public void SetInitialRating(string playername, int rating)
