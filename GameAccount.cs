@@ -2,7 +2,7 @@
 {
     public class GameAccount
     {
-        protected int GamesCount;
+        private int GamesCount;
         protected string AccountType;
         protected string RatingCalculationRules;
         public string AccountID { get; }
@@ -47,7 +47,7 @@
                 allGames.Add(lostgame);
             }
         }
-        public void DrawGame(string playername, string opponentname)
+        public virtual void DrawGame(string playername, string opponentname)
         {
             var drawgame = new Data(playername, opponentname, 0, "НIЧИЯ");
             allGames.Add(drawgame);

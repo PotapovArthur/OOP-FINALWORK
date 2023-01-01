@@ -25,16 +25,13 @@
         }
         public override void LoseGame(string playername, string opponentname, Game game)
         {
-            if (CurrentRating - game.GetRating < 1)
-            {
-                var negativerating = new Data(playername, opponentname, -CurrentRating + 1, "ПОРАЗКА");
-                allGames.Add(negativerating);
-            } else
-            {
-                WinStreak = 0;
-                var lostgame = new Data(playername, opponentname, -game.GetRating, "ПОРАЗКА");
-                allGames.Add(lostgame);
-            }
+            WinStreak = 0;
+            base.LoseGame(playername, opponentname, game);
+        }
+        public override void DrawGame(string playername, string opponentname)
+        {
+            WinStreak = 0;
+            base.DrawGame(playername, opponentname);
         }
     }
 }
